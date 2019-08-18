@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.tmc.beans.User
+import com.github.mikephil.charting.charts.PieChart
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_register_user.*
@@ -29,6 +30,10 @@ class TMCActivity : AppCompatActivity() {
                 }
             }
         })
+
+        val pieChart: PieChart = PieChart(applicationContext)
+        pieChart.centerText = "BRE"
+
 
     }
 }
